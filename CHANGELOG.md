@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [17.7.0](https://github.com/topgrade-rs/topgrade/compare/v17.6.2...v17.7.0) - 2026-06-24
+
+### Added
+
+- *(mise)* support Windows
+- *(git)* add config option to fetch default branch instead of failing when on another branch ([#2109](https://github.com/topgrade-rs/topgrade/pull/2109))
+- *(jetbrains-toolbox)* remove download cache if cleanup = true
+- *(needrestart)* support detecting and skipping it on fedora ([#2097](https://github.com/topgrade-rs/topgrade/pull/2097))
+
+### Fixed
+
+- *(mise)* refresh process env after upgrade ([#2113](https://github.com/topgrade-rs/topgrade/pull/2113))
+- *(nix)* use sudo when current profile is not owned by us
+- *(nix)* improve correctness of current profile calculation
+- *(skills)* find lock file via XDG_STATE_HOME ([#2114](https://github.com/topgrade-rs/topgrade/pull/2114))
+- *(mise)* only forward --jobs when set
+- *(nix)* skip profile check for Determinate Nix upgrade ([#2074](https://github.com/topgrade-rs/topgrade/pull/2074))
+- *(pi)* add extension updates ([#2102](https://github.com/topgrade-rs/topgrade/pull/2102))
+- improve default step order ([#2098](https://github.com/topgrade-rs/topgrade/pull/2098))
+
 ## [17.6.2](https://github.com/topgrade-rs/topgrade/compare/v17.6.1...v17.6.2) - 2026-06-20
 
 ### Fixed
